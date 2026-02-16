@@ -16,10 +16,10 @@ export interface GeneratedContent {
 
 type GiftCard = (typeof giftcards)[number];
 
-const OPENAI_API_KEY = "";
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const client = OPENAI_API_KEY
   ? new OpenAI({
-      apiKey: "",
+      apiKey: OPENAI_API_KEY,
     })
   : null;
 
