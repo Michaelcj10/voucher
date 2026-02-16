@@ -153,6 +153,10 @@ export default function VoucherPage({
 }) {
   const countries = card.countriesAvailableForUse as Country[];
   const primaryCountry = countries[0]?.name ?? "worldwide";
+  // Operator logo URL
+  const operatorLogoUrl = card.operatorCode
+    ? `https://imagerepo.ding.com/logo/${card.operatorCode}.png?width=490`
+    : null;
 
   // --- Structured Data ---
   const productSchema = {
@@ -321,6 +325,20 @@ export default function VoucherPage({
 
           {/* Hero */}
           <Box sx={{ mb: 5 }}>
+            {operatorLogoUrl && (
+              <Box sx={{ mb: 2, textAlign: "center" }}>
+                <img
+                  src={operatorLogoUrl}
+                  alt={card.brand + " logo"}
+                  style={{
+                    maxWidth: 180,
+                    maxHeight: 80,
+                    objectFit: "contain",
+                    borderRadius: 6,
+                  }}
+                />
+              </Box>
+            )}
             <Typography
               variant="h3"
               component="h1"
@@ -494,13 +512,13 @@ export default function VoucherPage({
                 label="Denominations"
                 value={generated.denominations.map((d) => d.label)}
               />
-              <DetailRow label="How to Redeem" value={card.howToRedeem} />
-              <DetailRow label="Expiry" value={card.expiry} />
+              <DetailRow label="How to Redeem" value={card.howToRedeem || ""} />
+              <DetailRow label="Expiry" value={card.expiry || ""} />
               <DetailRow
                 label="Additional Terms"
-                value={card.additionalTerms}
+                value={card.additionalTerms || ""}
               />
-              <DetailRow label="Contact" value={card.contact} />
+              <DetailRow label="Contact" value={card.contact || ""} />
               <DetailRow
                 label="Where to Use"
                 value={

@@ -1,40 +1,162 @@
 [
   {
-    "id": "amazon",
-    "name": "Amazon Gift Card",
-    "country": "US",
+    "name": "Amazon",
+    "operatorCode": "2A",
     "brand": "Amazon",
-    "denominations": [25, 50, 100],
+    "expiry": "Amazon.com e-gift cards do not expire once added to the account.",
+    "fees": "",
+    "additionalTerms": "This e-gift card is non-refundable and cannot be exchanged for cash. Valid for one-time redemption. Any remaining balance will stay in the e-gift card user's Amazon.com account for future purchases. International shipping availability and fees depend on the destination country. No expiry once redeemed into an Amazon.com account.",
+    "howToRedeem": "1. You'll get an e-Gift Card PIN code. 2. Share it with your loved one - wherever they are in the world. 3. They can redeem it by visiting amazon.com/redeem, signing in or creating an Amazon.com account, and entering the e-gift card code to add the USD balance.",
+    "contact": "If you are having issues redeeming your gift card visit: https://www.amazon.com/gp/help/customer/display.html?nodeId=GKHH2QV3FXHLQPE7",
+    "locations": "Redeemable only on Amazon.com. Amazon.com ships to many countries worldwide - making this e-gift card a great choice for loved ones living abroad.",
     "url": "amazon",
     "countriesAvailableForUse": [
-      { "name": "United States", "iso": "US" },
-      { "name": "Canada", "iso": "CA" }
+      { "name": "United Arab Emirates", "iso": "AE" },
+      { "name": "Angola", "iso": "AO" },
+      { "name": "Botswana", "iso": "BW" },
+      { "name": "Cameroon", "iso": "CM" },
+      { "name": "Algeria", "iso": "DZ" },
+      { "name": "France", "iso": "FR" },
+      { "name": "United Kingdom", "iso": "GB" },
+      { "name": "India", "iso": "IN" },
+      { "name": "Mexico", "iso": "MX" },
+      { "name": "Saudi Arabia", "iso": "SA" },
+      { "name": "United States", "iso": "US" }
     ],
-    "description": "A versatile gift card for shopping on Amazon.",
-    "howToRedeem": "Enter the code at checkout on Amazon.com.",
-    "expiry": "No expiry date.",
-    "additionalTerms": "Valid only on Amazon US and Canada.",
-    "locations": ["Online", "Amazon Stores"],
-    "contact": "1-888-280-4331",
-    "productCategories": ["Shopping", "E-commerce"]
+    "redeemableIn": [
+      { "name": "United Arab Emirates", "iso": "AE" },
+      { "name": "Angola", "iso": "AO" },
+      { "name": "Botswana", "iso": "BW" },
+      { "name": "Cameroon", "iso": "CM" },
+      { "name": "Algeria", "iso": "DZ" },
+      { "name": "France", "iso": "FR" },
+      { "name": "United Kingdom", "iso": "GB" },
+      { "name": "India", "iso": "IN" },
+      { "name": "Mexico", "iso": "MX" },
+      { "name": "Saudi Arabia", "iso": "SA" },
+      { "name": "United States", "iso": "US" }
+    ],
+    "description": "An Amazon.com e-gift card is the perfect digital gift for loved ones anywhere in the world. With millions of products and worldwide delivery available on Amazon.com, your loved ones can shop the items they love - no matter which country they live in. Send them the PIN code in seconds, and they can start shopping right away!",
+    "productCategories": ["gifts"]
   },
   {
-    "id": "itunes",
-    "name": "iTunes Gift Card",
-    "country": "US",
+    "name": "Apple Gift Card",
+    "operatorCode": "IA",
     "brand": "Apple",
-    "denominations": [15, 25, 50],
-    "url": "itunes",
+    "expiry": "Apple e-gift cards do not expire once added to an Apple account.",
+    "fees": "",
+    "additionalTerms": "This e-gift card is non-refundable and cannot be exchanged for cash. Valid for one-time redemption. Any remaining balance stays in the recipient's U.S. Apple ID for future purchases. Content availability varies by region.",
+    "howToRedeem": "1. You'll receive an Apple (USA) e-gift card PIN code. 2. Share it with your loved one - wherever they are in the world. 3. They can redeem it by using a U.S. Apple ID and entering the PIN code to add the USD balance to that account.",
+    "contact": "",
+    "locations": "Redeemable only on the U.S. App Store, U.S. Apple Store, and U.S. Apple services (Apple Music, iCloud+, Apple TV+, etc.). This e-gift card is issued in USD. A U.S. Apple ID is required to redeem and use this gift card.",
+    "url": "apple-gift-card",
     "countriesAvailableForUse": [
-      { "name": "United States", "iso": "US" },
-      { "name": "United Kingdom", "iso": "GB" }
+      { "name": "United States", "iso": "US" }
     ],
-    "description": "Redeem for music, apps, and more on iTunes.",
-    "howToRedeem": "Use the code in your Apple account.",
-    "expiry": "No expiry date.",
-    "additionalTerms": "Valid only on iTunes US and UK.",
-    "locations": ["Online", "Apple Stores"],
-    "contact": "1-800-MY-APPLE",
-    "productCategories": ["Music", "Apps", "Entertainment"]
+    "redeemableIn": [
+      { "name": "United States", "iso": "US" }
+    ],
+    "description": "An Apple (USA) e-gift card is the perfect digital gift for anyone who loves apps, music, movies, subscriptions, or iCloud storage. Send the PIN code in seconds, and your loved one can enjoy their favourite Apple experiences right away.",
+    "productCategories": ["gifts"]
+  },
+  {
+    "name": "BIGO Live",
+    "operatorCode": "QB",
+    "brand": "BIGO Live",
+    "expiry": null,
+    "fees": null,
+    "additionalTerms": null,
+    "howToRedeem": null,
+    "contact": null,
+    "locations": null,
+    "url": "bigo-live",
+    "countriesAvailableForUse": [
+      { "name": "Qatar", "iso": "QA" }
+    ],
+    "redeemableIn": [
+      { "name": "Qatar", "iso": "QA" }
+    ],
+    "description": null,
+    "productCategories": ["gifts"]
+  },
+  {
+    "name": "Daraz",
+    "operatorCode": "75",
+    "brand": "Daraz",
+    "expiry": null,
+    "fees": null,
+    "additionalTerms": null,
+    "howToRedeem": null,
+    "contact": null,
+    "locations": null,
+    "url": "daraz",
+    "countriesAvailableForUse": [
+      { "name": "Pakistan", "iso": "PK" }
+    ],
+    "redeemableIn": [
+      { "name": "Pakistan", "iso": "PK" }
+    ],
+    "description": null,
+    "productCategories": ["popular", "shopping"]
+  },
+  {
+    "name": "Family Box",
+    "operatorCode": "CQ",
+    "brand": "Family Box",
+    "expiry": null,
+    "fees": null,
+    "additionalTerms": null,
+    "howToRedeem": null,
+    "contact": null,
+    "locations": null,
+    "url": "family-box",
+    "countriesAvailableForUse": [
+      { "name": "Venezuela", "iso": "VE" }
+    ],
+    "redeemableIn": [
+      { "name": "Venezuela", "iso": "VE" }
+    ],
+    "description": null,
+    "productCategories": ["groceries", "gifts"]
+  },
+  {
+    "name": "Farma Value",
+    "operatorCode": "4O",
+    "brand": "Farma Value",
+    "expiry": null,
+    "fees": null,
+    "additionalTerms": null,
+    "howToRedeem": null,
+    "contact": null,
+    "locations": null,
+    "url": "farma-value",
+    "countriesAvailableForUse": [
+      { "name": "Dominican Republic", "iso": "DO" }
+    ],
+    "redeemableIn": [
+      { "name": "Dominican Republic", "iso": "DO" }
+    ],
+    "description": null,
+    "productCategories": ["health", "gifts"]
+  },
+  {
+    "name": "Jollibee",
+    "operatorCode": "3D",
+    "brand": "Jollibee",
+    "expiry": null,
+    "fees": null,
+    "additionalTerms": null,
+    "howToRedeem": null,
+    "contact": null,
+    "locations": null,
+    "url": "jollibee",
+    "countriesAvailableForUse": [
+      { "name": "Philippines", "iso": "PH" }
+    ],
+    "redeemableIn": [
+      { "name": "Philippines", "iso": "PH" }
+    ],
+    "description": null,
+    "productCategories": ["popular", "restaurants"]
   }
 ]

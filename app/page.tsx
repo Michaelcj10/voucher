@@ -1,6 +1,9 @@
+"use client";
+
+import { useState, useMemo } from "react";
 import giftcards from "../data/giftcards.json";
 import { countryToSlug } from "../utils/countrySlug";
-import { ChevronRight, Globe } from "lucide-react";
+import { ChevronRight, Globe, Search } from "lucide-react";
 import Link from "next/link";
 import Head from "next/head";
 import {
@@ -86,6 +89,31 @@ export default function Page() {
   const grouped = groupByCountry(giftcards);
   const totalCountries = grouped.length;
   const totalCards = giftcards.length;
+
+  const [search, setSearch] = useState("");
+
+  // Flat deduplicated list for grid view
+  const filteredCards = useMemo(() => {
+    const q = search.toLowerCase().trim();
+    const unique = new Map<string, (typeof giftcards)[number]>();
+    for (const card of giftcards) {
+      if (!q) {
+        unique.set(card.url, card);
+        continue;
+      }
+      const nameMatch = card.name.toLowerCase().includes(q);
+      const catMatch = card.productCategories.some((c) =>
+        c.toLowerCase().includes(q),
+      );
+      const countryMatch = (card.countriesAvailableForUse as Country[]).some(
+        (c) => c.name.toLowerCase().includes(q),
+      );
+      if (nameMatch || catMatch || countryMatch) {
+        unique.set(card.url, card);
+      }
+    }
+    return Array.from(unique.values());
+  }, [search]);
 
   // Popular cards (first 6 unique brands)
   const popularCards = giftcards.slice(0, 6);
@@ -374,24 +402,34 @@ export default function Page() {
                       "&:hover": { borderColor: "#ccc" },
                     }}
                   >
-                    <Box
-                      sx={{
-                        width: 44,
-                        height: 44,
-                        borderRadius: 1.5,
-                        bgcolor: "#f5f5f5",
-                        color: "#333",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        fontWeight: 700,
-                        fontSize: 15,
-                        mr: 2,
-                        flexShrink: 0,
-                      }}
-                    >
-                      {getCardInitials(card.name)}
-                    </Box>
+                    {card.operatorCode ? (
+                      <img
+                        src={`https://imagerepo.ding.com/logo/${card.operatorCode}.png?width=245&compress=none`}
+                        alt={`${card.name} logo`}
+                        width={85}
+                        height={50}
+                        style={{ borderRadius: 6, marginRight: 16 }}
+                      />
+                    ) : (
+                      <Box
+                        sx={{
+                          width: 44,
+                          height: 44,
+                          borderRadius: 1.5,
+                          bgcolor: "#f5f5f5",
+                          color: "#333",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          fontWeight: 700,
+                          fontSize: 15,
+                          mr: 2,
+                          flexShrink: 0,
+                        }}
+                      >
+                        {getCardInitials(card.name)}
+                      </Box>
+                    )}
                     <Box sx={{ minWidth: 0, flex: 1 }}>
                       <Typography
                         variant="body1"
@@ -421,132 +459,192 @@ export default function Page() {
 
         <Divider />
 
-        {/* ───── Browse by Country ───── */}
+        {/* ───── All Gift Cards ───── */}
         <Container maxWidth="lg" sx={{ py: { xs: 4, md: 6 } }}>
           <Typography
             variant="h5"
             component="h2"
             sx={{ fontWeight: 700, color: "#111", mb: 1 }}
           >
-            Browse by Country
+            All Gift Cards
           </Typography>
-          <Typography variant="body1" sx={{ color: "#888", mb: 5 }}>
+          <Typography variant="body1" sx={{ color: "#888", mb: 3 }}>
             Find gift cards available in your country or send to loved ones
             abroad.
           </Typography>
 
-          <Stack spacing={5}>
-            {grouped.map(([country, { iso, cards }]) => (
-              <Box key={country} id={countryToSlug(country)}>
-                <Stack
-                  direction="row"
-                  spacing={1.5}
-                  sx={{ alignItems: "center", mb: 2 }}
+          {/* Search */}
+          <Box
+            sx={{
+              position: "relative",
+              maxWidth: 480,
+              mb: 4,
+            }}
+          >
+            <Box
+              sx={{
+                position: "absolute",
+                left: 14,
+                top: "50%",
+                transform: "translateY(-50%)",
+                display: "flex",
+                color: "#aaa",
+                pointerEvents: "none",
+              }}
+            >
+              <Search style={{ width: 18, height: 18 }} />
+            </Box>
+            <input
+              type="text"
+              placeholder="Search by card name, country, or category..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              style={{
+                width: "100%",
+                padding: "12px 14px 12px 42px",
+                fontSize: 15,
+                border: "1px solid #eee",
+                borderRadius: 10,
+                outline: "none",
+                background: "#fafafa",
+                color: "#111",
+                transition: "border-color 0.15s",
+              }}
+              onFocus={(e) => (e.target.style.borderColor = "#ccc")}
+              onBlur={(e) => (e.target.style.borderColor = "#eee")}
+            />
+          </Box>
+
+          {filteredCards.length === 0 && (
+            <Typography variant="body1" sx={{ color: "#888", py: 4 }}>
+              No gift cards found for &ldquo;{search}&rdquo;. Try a different
+              search term.
+            </Typography>
+          )}
+
+          <Grid container spacing={2}>
+            {filteredCards.map((card) => (
+              <Grid item xs={6} sm={4} md={3} key={card.url}>
+                <Link
+                  href={`/${card.url}`}
+                  style={{ textDecoration: "none", color: "inherit" }}
                 >
-                  <img
-                    src={`https://imagerepo.ding.com/flag/${iso.toUpperCase()}.png?height=40&compress=none`}
-                    alt={`${country} flag`}
-                    width={28}
-                    height={28}
-                    style={{ borderRadius: "50%" }}
-                  />
-                  <Link
-                    href={`/country/${countryToSlug(country)}`}
-                    style={{ textDecoration: "none", color: "inherit" }}
+                  <Card
+                    elevation={0}
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      p: 2.5,
+                      borderRadius: 2,
+                      border: "1px solid #eee",
+                      cursor: "pointer",
+                      transition: "border-color 0.15s",
+                      "&:hover": { borderColor: "#ccc" },
+                      height: "100%",
+                    }}
                   >
+                    {card.operatorCode ? (
+                      <img
+                        src={`https://imagerepo.ding.com/logo/${card.operatorCode}.png?width=245&compress=none`}
+                        alt={`${card.name} logo`}
+                        width={100}
+                        height={60}
+                        style={{
+                          borderRadius: 8,
+                          objectFit: "contain",
+                          marginBottom: 12,
+                        }}
+                      />
+                    ) : (
+                      <Box
+                        sx={{
+                          width: 60,
+                          height: 60,
+                          borderRadius: 2,
+                          bgcolor: "#f5f5f5",
+                          color: "#333",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          fontWeight: 700,
+                          fontSize: 18,
+                          mb: 1.5,
+                        }}
+                      >
+                        {getCardInitials(card.name)}
+                      </Box>
+                    )}
                     <Typography
-                      variant="subtitle1"
-                      component="h3"
+                      variant="body2"
+                      noWrap
                       sx={{
                         fontWeight: 600,
                         color: "#111",
-                        "&:hover": { color: "#444" },
+                        width: "100%",
+                        textAlign: "center",
+                        mb: 0.5,
                       }}
                     >
-                      {country}
+                      {card.name}
                     </Typography>
-                  </Link>
-                  <Typography variant="body2" sx={{ color: "#aaa" }}>
-                    {cards.length} {cards.length === 1 ? "card" : "cards"}
-                  </Typography>
-                </Stack>
-
-                <Grid container spacing={2}>
-                  {cards.map((card) => (
-                    <Grid
-                      item
-                      xs={12}
-                      sm={6}
-                      md={4}
-                      key={`${country}-${card.url}`}
+                    <Typography
+                      variant="caption"
+                      noWrap
+                      sx={{
+                        color: "#999",
+                        width: "100%",
+                        textAlign: "center",
+                        mb: 1,
+                      }}
                     >
-                      <Link
-                        href={`/${card.url}`}
-                        style={{ textDecoration: "none", color: "inherit" }}
-                      >
-                        <Card
-                          elevation={0}
+                      {card.productCategories.join(", ")}
+                    </Typography>
+                    {/* Country flags */}
+                    <Stack
+                      direction="row"
+                      spacing={0.5}
+                      sx={{
+                        flexWrap: "wrap",
+                        justifyContent: "center",
+                        gap: 0.5,
+                        mt: "auto",
+                      }}
+                    >
+                      {(card.countriesAvailableForUse as Country[])
+                        .slice(0, 5)
+                        .map((c) => (
+                          <img
+                            key={c.iso}
+                            src={`https://imagerepo.ding.com/flag/${c.iso.toUpperCase()}.png?height=32&compress=none`}
+                            alt={c.name}
+                            title={c.name}
+                            width={18}
+                            height={18}
+                            style={{ borderRadius: "50%" }}
+                          />
+                        ))}
+                      {(card.countriesAvailableForUse as Country[]).length >
+                        5 && (
+                        <Typography
+                          variant="caption"
                           sx={{
-                            display: "flex",
-                            alignItems: "center",
-                            p: 2,
-                            borderRadius: 2,
-                            border: "1px solid #eee",
-                            cursor: "pointer",
-                            transition: "border-color 0.15s",
-                            "&:hover": { borderColor: "#ccc" },
+                            color: "#aaa",
+                            fontSize: 11,
+                            lineHeight: "18px",
                           }}
                         >
-                          <Box
-                            sx={{
-                              width: 44,
-                              height: 44,
-                              borderRadius: 1.5,
-                              bgcolor: "#f5f5f5",
-                              color: "#333",
-                              display: "flex",
-                              alignItems: "center",
-                              justifyContent: "center",
-                              fontWeight: 700,
-                              fontSize: 15,
-                              mr: 2,
-                              flexShrink: 0,
-                            }}
-                          >
-                            {getCardInitials(card.name)}
-                          </Box>
-                          <Box sx={{ minWidth: 0, flex: 1 }}>
-                            <Typography
-                              variant="body1"
-                              noWrap
-                              sx={{ fontWeight: 600, color: "#111" }}
-                            >
-                              {card.name}
-                            </Typography>
-                            <Typography
-                              variant="body2"
-                              noWrap
-                              sx={{ color: "#999" }}
-                            >
-                              {card.productCategories.join(", ")}
-                            </Typography>
-                          </Box>
-                          <ChevronRight
-                            style={{
-                              width: 20,
-                              height: 20,
-                              color: "#ccc",
-                              flexShrink: 0,
-                            }}
-                          />
-                        </Card>
-                      </Link>
-                    </Grid>
-                  ))}
-                </Grid>
-              </Box>
+                          +
+                          {(card.countriesAvailableForUse as Country[]).length -
+                            5}
+                        </Typography>
+                      )}
+                    </Stack>
+                  </Card>
+                </Link>
+              </Grid>
             ))}
-          </Stack>
+          </Grid>
         </Container>
 
         <Divider />

@@ -41,29 +41,39 @@ export default function CountryPage({ country, cards }: Props) {
                     "&:hover": { borderColor: "#ccc" },
                   }}
                 >
-                  <Box
-                    sx={{
-                      width: 44,
-                      height: 44,
-                      borderRadius: 1.5,
-                      bgcolor: "#f5f5f5",
-                      color: "#333",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      fontWeight: 700,
-                      fontSize: 15,
-                      mr: 2,
-                      flexShrink: 0,
-                    }}
-                  >
-                    {card.name
-                      .split(" ")
-                      .map((w: string) => w[0])
-                      .join("")
-                      .slice(0, 2)
-                      .toUpperCase()}
-                  </Box>
+                  {card.operatorCode ? (
+                    <img
+                      src={`https://imagerepo.ding.com/logo/${card.operatorCode}.png?width=245&compress=none`}
+                      alt={`${card.name} logo`}
+                      width={85}
+                      height={50}
+                      style={{ borderRadius: 6, marginRight: 16 }}
+                    />
+                  ) : (
+                    <Box
+                      sx={{
+                        width: 44,
+                        height: 44,
+                        borderRadius: 1.5,
+                        bgcolor: "#f5f5f5",
+                        color: "#333",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        fontWeight: 700,
+                        fontSize: 15,
+                        mr: 2,
+                        flexShrink: 0,
+                      }}
+                    >
+                      {card.name
+                        .split(" ")
+                        .map((w: string) => w[0])
+                        .join("")
+                        .slice(0, 2)
+                        .toUpperCase()}
+                    </Box>
+                  )}
                   <Box sx={{ minWidth: 0, flex: 1 }}>
                     <Typography
                       variant="body1"
