@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Amazon",
+    "operatorCode": "2A",
+    "expiry": "Amazon.com e-gift cards do not expire once added to the account.",
+    "fees": "",
+    "additionalTerms": "- This e-gift card is non-refundable and cannot be exchanged for cash.\n- Valid for one-time redemption.\n- Any remaining balance will stay in the e-gift card user's Amazon.com account for future purchases.\n- International shipping availability and fees depend on the destination country.\n- No expiry once redeemed into an Amazon.com account.",
+    "howToRedeem": "1. You'll get an e-Gift Card PIN code.\n2. Share it with your loved one - wherever they are in the world.\n3. They can redeem it by:\n\n    - Visiting amazon.com/redeem\n    - Signing in or creating an Amazon.com account\n    - Entering the e-gift card code to add the USD balance\n\nThat's it - quick and simple! 🎉",
+    "contact": "If you are having issues redeeming your gift card visit: https://www.amazon.com/gp/help/customer/display.html?nodeId=GKHH2QV3FXHLQPE7",
+    "locations": "- Redeemable only on Amazon.com.\n- Amazon.com ships to many countries worldwide - making this e-gift card a great choice for loved ones living abroad.\n- Check Amazon's website for more information on international shopping here: https://www.amazon.com/b?node=17416544011",
+    "productCode": null,
+    "url": "amazon",
+    "countriesAvailableForUse": [
+      { "name": "United Arab Emirates", "iso": "AE" },
+      { "name": "Angola", "iso": "AO" },
+      { "name": "Botswana", "iso": "BW" },
+      { "name": "Cameroon", "iso": "CM" },
+      { "name": "Algeria", "iso": "DZ" },
+      { "name": "France", "iso": "FR" },
+      { "name": "United Kingdom", "iso": "GB" },
+      { "name": "India", "iso": "IN" },
+      { "name": "Mexico", "iso": "MX" },
+      { "name": "Saudi Arabia", "iso": "SA" },
+      { "name": "United States", "iso": "US" }
+    ],
+    "redeemableIn": [
+      { "name": "United Arab Emirates", "iso": "AE" },
+      { "name": "Angola", "iso": "AO" },
+      { "name": "Botswana", "iso": "BW" },
+      { "name": "Cameroon", "iso": "CM" },
+      { "name": "Algeria", "iso": "DZ" },
+      { "name": "France", "iso": "FR" },
+      { "name": "United Kingdom", "iso": "GB" },
+      { "name": "India", "iso": "IN" },
+      { "name": "Mexico", "iso": "MX" },
+      { "name": "Saudi Arabia", "iso": "SA" },
+      { "name": "United States", "iso": "US" }
+    ],
+    "itemOrder": 1,
+    "description": "🎁 An Amazon.com e-gift card is the perfect digital gift for loved ones anywhere in the world. With millions of products and worldwide delivery available on Amazon.com, your loved ones can shop the items they love - no matter which country they live in. Send them the PIN code in seconds, and they can start shopping right away!",
+    "productCategories": ["gifts"]
+  },
+  {
+    "name": "Apple Gift Card",
+    "operatorCode": "IA",
+    "expiry": "Apple e-gift cards do not expire once added to an Apple account.",
+    "fees": "",
+    "additionalTerms": "- This e-gift card is non-refundable and cannot be exchanged for cash.\n- Valid for one-time redemption.\n- Any remaining balance stays in the recipient's U.S. Apple ID for future purchases.\n- Content availability varies by region.",
+    "howToRedeem": "1. You'll receive an Apple (USA) e-gift card PIN code.\n2. Share it with your loved one - wherever they are in the world.\n3. They can redeem it by using a U.S. Apple ID and entering the PIN code to add the USD balance to that account.\n\nThat's it - quick and simple! 🎉\n\nTips for them💡\n\n- They can create a separate U.S. Apple ID just for redeeming and using U.S. gift cards - this is the easiest and most common method.\n- Or, they can change their current Apple ID to the U.S. region (after spending any existing balance and cancelling active subscriptions). This might require having a U.S. address.",
+    "contact": "",
+    "locations": "Redeemable only on the U.S. App Store, U.S. Apple Store, and U.S. Apple services (Apple Music, iCloud+, Apple TV+, etc.). This e-gift card is issued in USD.\n\n❗Important Regional Restriction:\n\n- Apple gift cards cannot be redeemed outside the country or region of purchase\n- A U.S. Apple ID is required to redeem and use this gift card.\n\nTo learn more about Apple's regional rules, visit Apple's support page: https://support.apple.com/en-us/118242",
+    "productCode": null,
+    "url": "apple-gift-card",
+    "countriesAvailableForUse": [
+      { "name": "United States", "iso": "US" }
+    ],
+    "redeemableIn": [
+      { "name": "United States", "iso": "US" }
+    ],
+    "itemOrder": 1,
+    "description": "🎁 An Apple (USA) e-gift card is the perfect digital gift for anyone who loves apps, music, movies, subscriptions, or iCloud storage. Send the PIN code in seconds, and your loved one can enjoy their favourite Apple experiences right away.",
+    "productCategories": ["gifts"]
+  },
+  {
+    "name": "BIGO Live",
+    "operatorCode": "QB",
+    "expiry": null,
+    "fees": null,
+    "additionalTerms": null,
+    "howToRedeem": null,
+    "contact": null,
+    "locations": null,
+    "productCode": null,
+    "url": "bigo-live",
+    "countriesAvailableForUse": [
+      { "name": "Qatar", "iso": "QA" }
+    ],
+    "redeemableIn": [
+      { "name": "Qatar", "iso": "QA" }
+    ],
+    "itemOrder": 1,
+    "description": null,
+    "productCategories": ["gifts"]
+  },
+  {
+    "name": "Daraz",
+    "operatorCode": "75",
+    "expiry": null,
+    "fees": null,
+    "additionalTerms": null,
+    "howToRedeem": null,
+    "contact": null,
+    "locations": null,
+    "productCode": null,
+    "url": "daraz",
+    "countriesAvailableForUse": [
+      { "name": "Pakistan", "iso": "PK" }
+    ],
+    "redeemableIn": [
+      { "name": "Pakistan", "iso": "PK" }
+    ],
+    "itemOrder": 1,
+    "description": null,
+    "productCategories": ["popular", "shopping"]
+  }
+]

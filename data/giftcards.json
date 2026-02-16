@@ -1,0 +1,40 @@
+[
+  {
+    "id": "amazon",
+    "name": "Amazon Gift Card",
+    "country": "US",
+    "brand": "Amazon",
+    "denominations": [25, 50, 100],
+    "url": "amazon",
+    "countriesAvailableForUse": [
+      { "name": "United States", "iso": "US" },
+      { "name": "Canada", "iso": "CA" }
+    ],
+    "description": "A versatile gift card for shopping on Amazon.",
+    "howToRedeem": "Enter the code at checkout on Amazon.com.",
+    "expiry": "No expiry date.",
+    "additionalTerms": "Valid only on Amazon US and Canada.",
+    "locations": ["Online", "Amazon Stores"],
+    "contact": "1-888-280-4331",
+    "productCategories": ["Shopping", "E-commerce"]
+  },
+  {
+    "id": "itunes",
+    "name": "iTunes Gift Card",
+    "country": "US",
+    "brand": "Apple",
+    "denominations": [15, 25, 50],
+    "url": "itunes",
+    "countriesAvailableForUse": [
+      { "name": "United States", "iso": "US" },
+      { "name": "United Kingdom", "iso": "GB" }
+    ],
+    "description": "Redeem for music, apps, and more on iTunes.",
+    "howToRedeem": "Use the code in your Apple account.",
+    "expiry": "No expiry date.",
+    "additionalTerms": "Valid only on iTunes US and UK.",
+    "locations": ["Online", "Apple Stores"],
+    "contact": "1-800-MY-APPLE",
+    "productCategories": ["Music", "Apps", "Entertainment"]
+  }
+]
