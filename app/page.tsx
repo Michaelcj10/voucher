@@ -31,6 +31,11 @@ import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 type GiftCard = (typeof giftcards)[number];
 type Country = { name: string; iso: string };
 
+function primaryCountrySlug(card: GiftCard): string {
+  const first = (card.countriesAvailableForUse as Country[])[0];
+  return first ? countryToSlug(first.name) : "global";
+}
+
 function groupByCountry(
   cards: GiftCard[],
 ): [string, { iso: string; cards: GiftCard[] }][] {
@@ -181,6 +186,31 @@ export default function Page() {
           maxWidth="lg"
           sx={{ pt: { xs: 6, md: 10 }, pb: { xs: 4, md: 6 } }}
         >
+          {/* Logo */}
+          <Box sx={{ mb: 3 }}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="36"
+              viewBox="0 0 70 36"
+            >
+              <g fill="none" fillRule="evenodd">
+                <g fill="#004A59">
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          d="M177.946 37.027l4.4 4.4-1.494 1.494c.546 1.13.851 2.43.851 3.875v.003c0 2.136-1.137 4.237-3.102 5.649 3.137 1.79 3.344 4.202 3.344 5.132 0 5.51-4.792 7.577-9.651 7.577-6.101 0-9.57-3.2-9.225-8.4h5.91c-.08 3.119 2.236 3.41 4.208 3.222 1.232-.118 2.228-1.126 2.243-2.362.015-1.257-.735-2.31-3.067-2.31-5.722 0-9.479-3.307-9.479-8.577 0-5.29 4.13-8.65 9.336-8.71h.177c1.37.02 2.663.273 3.827.728l1.722-1.721zM132.29 33.11v22.4h-5.6l-.312-1.754c-1.447 1.653-3.693 2.238-5.589 2.135-4.997-.31-7.789-3.444-7.789-8.817 0-5.2 3.309-8.886 8.272-8.886 2.172 0 3.864.63 4.795 1.767v-6.845h6.223zm22.125 5.043h.235c3.585.035 6.574 1.93 6.574 7.991v9.367h-6.222v-9.333c0-2.1-1.248-2.824-2.42-2.824-1.516 0-2.87 1.034-2.87 3.272v8.885h-6.222v-16.8h5.6l.184 1.716c1.447-1.688 3.584-2.308 5.376-2.273zM141 38.71v16.8h-6.222v-16.8H141zm-18.281 4.61c-1.896 0-3.412 1.377-3.412 3.754s1.516 3.72 3.412 3.72c2.137 0 3.412-1.757 3.412-3.548 0-2.066-1.172-3.926-3.412-3.926zm49.643-.104c-1.861 0-3.31 1.24-3.31 3.513 0 2.033 1.449 3.341 3.31 3.341 1.689 0 3.205-1.067 3.205-3.34 0-1.93-1.344-3.514-3.205-3.514zM137.89 30c1.89 0 3.422 1.532 3.422 3.422 0 1.89-1.532 3.423-3.422 3.423-1.89 0-3.423-1.532-3.423-3.423 0-1.89 1.533-3.422 3.423-3.422z"
+                          transform="translate(-113 -24548) translate(0 21561) translate(0 2832) translate(0 125)"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </Box>
+
           <Stack
             direction="row"
             spacing={1}
@@ -386,7 +416,7 @@ export default function Page() {
             {popularCards.map((card) => (
               <Grid item xs={12} sm={6} md={4} key={`popular-${card.url}`}>
                 <Link
-                  href={`/${card.url}`}
+                  href={`/${primaryCountrySlug(card)}/${card.url}`}
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
                   <Card
@@ -526,7 +556,7 @@ export default function Page() {
             {filteredCards.map((card) => (
               <Grid item xs={6} sm={4} md={3} key={card.url}>
                 <Link
-                  href={`/${card.url}`}
+                  href={`/${primaryCountrySlug(card)}/${card.url}`}
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
                   <Card
@@ -665,7 +695,7 @@ export default function Page() {
             {allCountries.map((c) => (
               <Grid item xs={6} sm={4} md={3} key={c.iso}>
                 <Link
-                  href={`/country/${countryToSlug(c.name)}`}
+                  href={`/${countryToSlug(c.name)}`}
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
                   <Stack
