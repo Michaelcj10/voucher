@@ -26,5 +26,9 @@
     "react-dom": "^19.0.0",
     "styled-components": "^6.1.8",
     "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3"
   }
 }
