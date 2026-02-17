@@ -4,9 +4,12 @@
     "operatorCode": "2A",
     "brand": "Amazon",
     "expiry": "Amazon.com e-gift cards do not expire once added to the account.",
+    "expiry_es": "Las tarjetas de regalo electrónicas de Amazon.com no caducan una vez añadidas a la cuenta.",
     "fees": "",
     "additionalTerms": "This e-gift card is non-refundable and cannot be exchanged for cash. Valid for one-time redemption. Any remaining balance will stay in the e-gift card user's Amazon.com account for future purchases. International shipping availability and fees depend on the destination country. No expiry once redeemed into an Amazon.com account.",
+    "additionalTerms_es": "Esta tarjeta de regalo electrónica no es reembolsable y no se puede cambiar por efectivo. Válida para un solo canje. Cualquier saldo restante permanecerá en la cuenta de Amazon.com del usuario para futuras compras. La disponibilidad y las tarifas de envío internacional dependen del país de destino. No caduca una vez canjeada en una cuenta de Amazon.com.",
     "howToRedeem": "1. You'll get an e-Gift Card PIN code. 2. Share it with your loved one - wherever they are in the world. 3. They can redeem it by visiting amazon.com/redeem, signing in or creating an Amazon.com account, and entering the e-gift card code to add the USD balance.",
+    "howToRedeem_es": "1. Recibirás un código PIN de tarjeta de regalo electrónica. 2. Compártelo con tu ser querido, esté donde esté. 3. Puede canjearlo visitando amazon.com/redeem, iniciando sesión o creando una cuenta de Amazon.com, e ingresando el código de la tarjeta de regalo para añadir el saldo en USD.",
     "contact": "If you are having issues redeeming your gift card visit: https://www.amazon.com/gp/help/customer/display.html?nodeId=GKHH2QV3FXHLQPE7",
     "locations": "Redeemable only on Amazon.com. Amazon.com ships to many countries worldwide - making this e-gift card a great choice for loved ones living abroad.",
     "url": "amazon",
@@ -37,6 +40,7 @@
       { "name": "United States", "iso": "US" }
     ],
     "description": "An Amazon.com e-gift card is the perfect digital gift for loved ones anywhere in the world. With millions of products and worldwide delivery available on Amazon.com, your loved ones can shop the items they love - no matter which country they live in. Send them the PIN code in seconds, and they can start shopping right away!",
+    "description_es": "Una tarjeta de regalo electrónica de Amazon.com es el regalo digital perfecto para tus seres queridos en cualquier parte del mundo. Con millones de productos y entrega mundial disponible en Amazon.com, tus seres queridos pueden comprar lo que deseen, sin importar en qué país vivan. ¡Envíales el código PIN en segundos y podrán empezar a comprar de inmediato!",
     "productCategories": ["gifts"]
   },
   {
@@ -44,9 +48,12 @@
     "operatorCode": "IA",
     "brand": "Apple",
     "expiry": "Apple e-gift cards do not expire once added to an Apple account.",
+    "expiry_es": "Las tarjetas de regalo electrónicas de Apple no caducan una vez añadidas a una cuenta de Apple.",
     "fees": "",
     "additionalTerms": "This e-gift card is non-refundable and cannot be exchanged for cash. Valid for one-time redemption. Any remaining balance stays in the recipient's U.S. Apple ID for future purchases. Content availability varies by region.",
+    "additionalTerms_es": "Esta tarjeta de regalo electrónica no es reembolsable y no se puede cambiar por efectivo. Válida para un solo canje. Cualquier saldo restante permanecerá en el Apple ID estadounidense del destinatario para futuras compras. La disponibilidad de contenido varía según la región.",
     "howToRedeem": "1. You'll receive an Apple (USA) e-gift card PIN code. 2. Share it with your loved one - wherever they are in the world. 3. They can redeem it by using a U.S. Apple ID and entering the PIN code to add the USD balance to that account.",
+    "howToRedeem_es": "1. Recibirás un código PIN de tarjeta de regalo electrónica de Apple (EE. UU.). 2. Compártelo con tu ser querido, esté donde esté. 3. Puede canjearlo usando un Apple ID estadounidense e ingresando el código PIN para añadir el saldo en USD a esa cuenta.",
     "contact": "",
     "locations": "Redeemable only on the U.S. App Store, U.S. Apple Store, and U.S. Apple services (Apple Music, iCloud+, Apple TV+, etc.). This e-gift card is issued in USD. A U.S. Apple ID is required to redeem and use this gift card.",
     "url": "apple-gift-card",
@@ -57,6 +64,7 @@
       { "name": "United States", "iso": "US" }
     ],
     "description": "An Apple (USA) e-gift card is the perfect digital gift for anyone who loves apps, music, movies, subscriptions, or iCloud storage. Send the PIN code in seconds, and your loved one can enjoy their favourite Apple experiences right away.",
+    "description_es": "Una tarjeta de regalo electrónica de Apple (EE. UU.) es el regalo digital perfecto para quien ama las apps, la música, las películas, las suscripciones o el almacenamiento en iCloud. Envía el código PIN en segundos y tu ser querido podrá disfrutar de sus experiencias Apple favoritas de inmediato!",
     "productCategories": ["gifts"]
   },
   {
@@ -158,5 +166,1650 @@
     ],
     "description": null,
     "productCategories": ["popular", "restaurants"]
-  }
+  },
+    {
+      "name": "Spotify",
+      "operatorCode": "FH",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "spotify",
+      "countriesAvailableForUse": [
+        {
+          "name": "Austria",
+          "iso": "AT"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Austria",
+          "iso": "AT"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "entertainment"
+      ]
+    },
+    {
+      "name": "Spring Rose",
+      "operatorCode": "447E74",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "spring-rose",
+      "countriesAvailableForUse": [
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "StarzPlay",
+      "operatorCode": "3N",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "starzplay",
+      "countriesAvailableForUse": [
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Steam",
+      "operatorCode": "Z9",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "steam",
+      "countriesAvailableForUse": [
+        {
+          "name": "Belgium",
+          "iso": "BE"
+        },
+        {
+          "name": "Hong Kong SAR China",
+          "iso": "HK"
+        },
+        {
+          "name": "Ireland",
+          "iso": "IE"
+        },
+        {
+          "name": "Malaysia",
+          "iso": "MY"
+        },
+        {
+          "name": "Poland",
+          "iso": "PL"
+        },
+        {
+          "name": "Slovenia",
+          "iso": "SI"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Belgium",
+          "iso": "BE"
+        },
+        {
+          "name": "Hong Kong SAR China",
+          "iso": "HK"
+        },
+        {
+          "name": "Ireland",
+          "iso": "IE"
+        },
+        {
+          "name": "Malaysia",
+          "iso": "MY"
+        },
+        {
+          "name": "Poland",
+          "iso": "PL"
+        },
+        {
+          "name": "Slovenia",
+          "iso": "SI"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gaming"
+      ]
+    },
+    {
+      "name": "Strandbags",
+      "operatorCode": "CFE169",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "strandbags",
+      "countriesAvailableForUse": [
+        {
+          "name": "Australia",
+          "iso": "AU"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Australia",
+          "iso": "AU"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Super50",
+      "operatorCode": "31BC8F",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "super50",
+      "countriesAvailableForUse": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "groceries"
+      ]
+    },
+    {
+      "name": "Supercheap Auto",
+      "operatorCode": "12E32A",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "supercheap-auto",
+      "countriesAvailableForUse": [
+        {
+          "name": "Australia",
+          "iso": "AU"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Australia",
+          "iso": "AU"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Superdry",
+      "operatorCode": "C6499E",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "superdry",
+      "countriesAvailableForUse": [
+        {
+          "name": "United Kingdom",
+          "iso": "GB"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "United Kingdom",
+          "iso": "GB"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "shopping"
+      ]
+    },
+    {
+      "name": "Sweet",
+      "operatorCode": "3AE636",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "sweet",
+      "countriesAvailableForUse": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Tamimi Markets",
+      "operatorCode": "7BD441",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tamimi-markets",
+      "countriesAvailableForUse": [
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Target",
+      "operatorCode": "C99B55",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "target",
+      "countriesAvailableForUse": [
+        {
+          "name": "Australia",
+          "iso": "AU"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Australia",
+          "iso": "AU"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "popular"
+      ]
+    },
+    {
+      "name": "Tavola",
+      "operatorCode": "367EC2",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tavola",
+      "countriesAvailableForUse": [
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Tavola",
+      "operatorCode": "5F3A86",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tavola",
+      "countriesAvailableForUse": [
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Tchibo",
+      "operatorCode": "E825B8",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tchibo",
+      "countriesAvailableForUse": [
+        {
+          "name": "Germany",
+          "iso": "DE"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Germany",
+          "iso": "DE"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "restaurants"
+      ]
+    },
+    {
+      "name": "TED BAKER",
+      "operatorCode": "0A2428",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "ted-baker",
+      "countriesAvailableForUse": [
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "TED BAKER",
+      "operatorCode": "5EB9C0",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "ted-baker",
+      "countriesAvailableForUse": [
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Ted Bodin",
+      "operatorCode": "DD6A90",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "ted-bodin",
+      "countriesAvailableForUse": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Tender Bob's",
+      "operatorCode": "96A147",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tender-bob's",
+      "countriesAvailableForUse": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "restaurants"
+      ]
+    },
+    {
+      "name": "Tesco",
+      "operatorCode": "863323",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tesco",
+      "countriesAvailableForUse": [
+        {
+          "name": "United Kingdom",
+          "iso": "GB"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "United Kingdom",
+          "iso": "GB"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "popular",
+        "gifts"
+      ]
+    },
+    {
+      "name": "Test Kitchen",
+      "operatorCode": "521670",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "test-kitchen",
+      "countriesAvailableForUse": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "restaurants"
+      ]
+    },
+    {
+      "name": "Tezenis",
+      "operatorCode": "D926DF",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tezenis",
+      "countriesAvailableForUse": [
+        {
+          "name": "Austria",
+          "iso": "AT"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Austria",
+          "iso": "AT"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "TGI Fridays",
+      "operatorCode": "85",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tgi-fridays",
+      "countriesAvailableForUse": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "restaurants"
+      ]
+    },
+    {
+      "name": "The Bistro Group",
+      "operatorCode": "796C5B",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "the-bistro-group",
+      "countriesAvailableForUse": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "restaurants"
+      ]
+    },
+    {
+      "name": "The Parenting Emporium",
+      "operatorCode": "46512APH",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "the-parenting-emporium",
+      "countriesAvailableForUse": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Tickeld Babies",
+      "operatorCode": "300882",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tickeld-babies",
+      "countriesAvailableForUse": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Ticketmaster",
+      "operatorCode": "8BB877",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "ticketmaster",
+      "countriesAvailableForUse": [
+        {
+          "name": "Australia",
+          "iso": "AU"
+        },
+        {
+          "name": "Germany",
+          "iso": "DE"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Australia",
+          "iso": "AU"
+        },
+        {
+          "name": "Germany",
+          "iso": "DE"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "TK Maxx",
+      "operatorCode": "6217EC",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tk-maxx",
+      "countriesAvailableForUse": [
+        {
+          "name": "Germany",
+          "iso": "DE"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Germany",
+          "iso": "DE"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "shopping"
+      ]
+    },
+    {
+      "name": "TK Maxx AT",
+      "operatorCode": "6217EC",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tk-maxx-at",
+      "countriesAvailableForUse": [
+        {
+          "name": "Austria",
+          "iso": "AT"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Austria",
+          "iso": "AT"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Todomoda",
+      "operatorCode": "4DA43A",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "todomoda",
+      "countriesAvailableForUse": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Tommy Hilfiger",
+      "operatorCode": "37A707",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tommy-hilfiger",
+      "countriesAvailableForUse": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "TOMMY HILFIGER",
+      "operatorCode": "C1AB9E",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tommy-hilfiger",
+      "countriesAvailableForUse": [
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Tonel Privado",
+      "operatorCode": "F12CD4",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tonel-privado",
+      "countriesAvailableForUse": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Tong Yang Plus",
+      "operatorCode": "593B15",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tong-yang-plus",
+      "countriesAvailableForUse": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "restaurants"
+      ]
+    },
+    {
+      "name": "ToursGift",
+      "operatorCode": "DD5054",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "toursgift",
+      "countriesAvailableForUse": [
+        {
+          "name": "Austria",
+          "iso": "AT"
+        },
+        {
+          "name": "Australia",
+          "iso": "AU"
+        },
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        },
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        },
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Austria",
+          "iso": "AT"
+        },
+        {
+          "name": "Australia",
+          "iso": "AU"
+        },
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        },
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        },
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "travel"
+      ]
+    },
+    {
+      "name": "Toys R Us",
+      "operatorCode": "11691C",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "toys-r-us",
+      "countriesAvailableForUse": [
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "TOYSRUS",
+      "operatorCode": "3925E8",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "toysrus",
+      "countriesAvailableForUse": [
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "shopping"
+      ]
+    },
+    {
+      "name": "Treatwell",
+      "operatorCode": "B9A1D6",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "treatwell",
+      "countriesAvailableForUse": [
+        {
+          "name": "United Kingdom",
+          "iso": "GB"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "United Kingdom",
+          "iso": "GB"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "TripGift",
+      "operatorCode": "317F1E",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "tripgift",
+      "countriesAvailableForUse": [
+        {
+          "name": "Austria",
+          "iso": "AT"
+        },
+        {
+          "name": "Australia",
+          "iso": "AU"
+        },
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        },
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        },
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Austria",
+          "iso": "AT"
+        },
+        {
+          "name": "Australia",
+          "iso": "AU"
+        },
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        },
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        },
+        {
+          "name": "Saudi Arabia",
+          "iso": "SA"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "travel"
+      ]
+    },
+    {
+      "name": "Twitch",
+      "operatorCode": "3F16CF",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "twitch",
+      "countriesAvailableForUse": [
+        {
+          "name": "Austria",
+          "iso": "AT"
+        },
+        {
+          "name": "Germany",
+          "iso": "DE"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Austria",
+          "iso": "AT"
+        },
+        {
+          "name": "Germany",
+          "iso": "DE"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "entertainment"
+      ]
+    },
+    {
+      "name": "Uber",
+      "operatorCode": "U9",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "uber",
+      "countriesAvailableForUse": [
+        {
+          "name": "Australia",
+          "iso": "AU"
+        },
+        {
+          "name": "Germany",
+          "iso": "DE"
+        },
+        {
+          "name": "United Kingdom",
+          "iso": "GB"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Australia",
+          "iso": "AU"
+        },
+        {
+          "name": "Germany",
+          "iso": "DE"
+        },
+        {
+          "name": "United Kingdom",
+          "iso": "GB"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Umara",
+      "operatorCode": "98C760",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "umara",
+      "countriesAvailableForUse": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Uncharted Earth",
+      "operatorCode": "DCEEC9",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "uncharted-earth",
+      "countriesAvailableForUse": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "UniPin",
+      "operatorCode": "583995",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "unipin",
+      "countriesAvailableForUse": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Urban Smiles",
+      "operatorCode": "4DFDAB",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "urban-smiles",
+      "countriesAvailableForUse": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Valenti",
+      "operatorCode": "C7E41C",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "valenti",
+      "countriesAvailableForUse": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Vero Moda",
+      "operatorCode": "CA9B2E",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "vero-moda",
+      "countriesAvailableForUse": [
+        {
+          "name": "Austria",
+          "iso": "AT"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Austria",
+          "iso": "AT"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Via Uno",
+      "operatorCode": "5BAEB9",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "via-uno",
+      "countriesAvailableForUse": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Viamo",
+      "operatorCode": "944FC8",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "viamo",
+      "countriesAvailableForUse": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Vikings",
+      "operatorCode": "2DE886",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "vikings",
+      "countriesAvailableForUse": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Philippines",
+          "iso": "PH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Vitamina",
+      "operatorCode": "00D158",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "vitamina",
+      "countriesAvailableForUse": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Argentina",
+          "iso": "AR"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Vlcc",
+      "operatorCode": "3278A1",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "vlcc",
+      "countriesAvailableForUse": [
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    },
+    {
+      "name": "Voga Closet",
+      "operatorCode": "239E0B",
+      "expiry": null,
+      "fees": null,
+      "additionalTerms": null,
+      "howToRedeem": null,
+      "contact": null,
+      "locations": null,
+      "productCode": null,
+      "url": "voga-closet",
+      "countriesAvailableForUse": [
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        }
+      ],
+      "redeemableIn": [
+        {
+          "name": "Bahrain",
+          "iso": "BH"
+        }
+      ],
+      "itemOrder": null,
+      "description": null,
+      "productCategories": [
+        "gifts"
+      ]
+    }
 ]
